@@ -11,7 +11,7 @@
 
     <groupId>com.chesterford</groupId>
     <artifactId>fast-openapi-generator-maven-plugin</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>pom</packaging>
 
     <name>fast-openapi-generator-maven-plugin</name>
@@ -48,6 +48,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <springdoc-openapi-ui.version>1.8.0</springdoc-openapi-ui.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <lombok.version>1.18.30</lombok.version>
+        <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
+        <fast-openapi-generator.version>1.0.0</fast-openapi-generator.version>
 
         <!-- Fast OpenAPI Properties -->
         <openapi.inputSpec>${project.basedir}/src/main/resources/example.yaml</openapi.inputSpec>
@@ -105,10 +108,12 @@
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
                         </path>
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok-mapstruct-binding</artifactId>
+                            <version>${lombok-mapstruct-binding.version}</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
@@ -121,7 +126,7 @@
                     <dependency>
                         <groupId>com.chesterford</groupId>
                         <artifactId>fast-openapi-generator</artifactId>
-                        <version>1.0.0</version>
+                        <version>${fast-openapi-generator.version}</version>
                     </dependency>
                 </dependencies>
                 <executions>
