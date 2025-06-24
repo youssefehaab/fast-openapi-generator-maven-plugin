@@ -1,0 +1,23 @@
+openapi: '3.0.3'
+
+info:
+  title: This is an example OpenAPI Specification
+  description: An example OpenAPI spec for demo.
+  version: '1.0'
+
+paths:
+  /example:
+    get:
+      summary: Example GET endpoint
+      operationId: exampleGetOperation
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "This is a GET operation example"
