@@ -18,3 +18,11 @@ In your microservice project’s `pom.xml`, set this parent:
   <artifactId>fast-openapi-generator-maven-plugin</artifactId>
   <version>1.0.0</version>
 </parent>
+
+<repositories>
+<repository>
+    <id>github</id>
+    <url>https://maven.pkg.github.com/youssefehaab/fast-openapi-generator-maven-plugin</url>
+</repository>
+</repositories>
+```
