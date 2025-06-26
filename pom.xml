@@ -11,7 +11,7 @@
 
     <groupId>com.chesterford</groupId>
     <artifactId>fast-openapi-generator-maven-plugin</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
 
     <name>fast-openapi-generator-maven-plugin</name>
@@ -152,7 +152,7 @@
                                 <generatedConstructorWithRequiredArgs>false</generatedConstructorWithRequiredArgs>
                             </configOptions>
                             <typeMappings>
-                                <typeMapping>spring+date-time=Instant</typeMapping>
+                                <typeMapping>string+date-time=Instant</typeMapping>
                             </typeMappings>
                             <schemaMappings>
                                 <schemaMapping>Instant=java.time.Instant</schemaMapping>
